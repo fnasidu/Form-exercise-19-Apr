@@ -1,0 +1,21 @@
+td {
+  vertical-align: text-top;
+  height: 33px;
+}
+
+.container {
+  border: 1px solid grey;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.smallfont {
+  font-size: 14px;
+}
