@@ -1,6 +1,12 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
 td {
   vertical-align: text-top;
   height: 33px;
+  padding-left: 5px;
 }
 
 .container {

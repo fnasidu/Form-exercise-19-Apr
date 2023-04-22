@@ -18,9 +18,8 @@
     <colgroup>
         <col span="1" style="width: 30%;">
         <col span="1" style="width: 70%;">
-
     </colgroup>
-        
+    <!--row1-->  
     <tr>
         <td><label for="dose">Please select the dose for vaccination:</label></td>
         <td><select id="dose" name="dose" required>
@@ -28,7 +27,6 @@
             <option value="2nd dose">2nd dose</option>
             <option value="3rd dose">3rd dose</option>
             <option value="4th dose">4th dose</option>
-
         </select></td>
     </tr>
 
@@ -37,8 +35,7 @@
         <p style="color: #666666;" class="underline"> Please fill in all fields</p>
         </td>
     </tr>
-
-        
+   <!--row2-->  
     <tr>
         <td>
             <label for="doc">Identity document type: </label>
@@ -49,21 +46,22 @@
                 <option value="Passport">Passport</option>
                 
             </select>
-            <br>
-            <div class="smallfont">For Hong Kong residnets not holding any of the above, please refer to <p style="color: #804f0f; display: inline;" class="underline">Question no.87 of FAQS.</p></div>
+            <pre></pre>
+            <div class="smallfont">For Hong Kong residnets not holding any of the above, please refer to <a style="color: #804f0f; display: inline;" class="underline" href="#">Question no.87 of FAQS.</a></div>
 
         </td>
     </tr>
-
-        
+     <!--row3--> 
     <tr>
         <td>
             <label for="IDno">Identity document number: </label>
         </td>
         <td>
-            <input id="IDno" name="IDno" type="text" required pattern="[A-Z]{1}[0-9]{7}" value="e.g.A12365678">
+            <input id="IDno" name="IDno" type="text" required pattern="[A-Z]{1}[0-9]{7}" placeholder="e.g.: A123456" style="width: 100px">
+            (<input id="IDno" name="IDno" type="text" required pattern="[0-9]{1} / [A-Z]{1} " placeholder="8" style="width: 10px">)
         </td>
-
+    </tr>
+    <!--row4--> 
     <tr>
         <td>
             <label for="dob-day">Date of birth on Identity document:</label>
@@ -97,7 +95,7 @@
               <p style="color: #666666" class="smallfont">(If there is no complete date of birth on Identity document, please select "Not Applicable" in the corresponsing date field.)</p>
         </td>    
     </tr>
-
+    <!--row5--> 
     <tr>
         <td>
             <label for="group">Eligible Group:</label>
@@ -124,11 +122,7 @@
 
         </td>
     </tr>   
-    
-    <tr>
-    <td><br></td>
-    </tr>
-
+    <!--row6--> 
     <tr>
         <td></td>
 
@@ -150,14 +144,12 @@
 
         </td>
     </tr>
-
+    <!--row7--> 
     <tr>
         <td>
             <label for="vacc">Choose the vaccine for your fourth dose: </label>
             <p style="color: red">Remark: Non-immunocompromised recovered persons aged 17 or below are not recommended to receive the 4th dose of vaccination.</p>
         </td>
-
-
         <td>
             <input type="radio" name="vacc" id="bio" value="bio" required> 
                 <label for="bio">BioNTech/Fosun [Comirnaty] (Aged 6 months or Above Only*)</label>
@@ -173,10 +165,6 @@
         </td>
     </tr>
     
-    <tr>
-        <td><br></td>
-        </tr>
-
     <tr>
         <br>
         <td colspan="2" style="text-align: center"><input type="submit" value="Submit"></td>
